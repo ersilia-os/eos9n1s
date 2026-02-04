@@ -5,41 +5,33 @@ Title: Hemozoin inhibitor prediction using simple physicochemical parameters
 Description: This very simple model using simple physicochemical parameters to predict
   hemozoin inhibition. The model is based on a HTS assay on 9, 600 compounds, from
   which 224 were hits and another 199 were randomly sampled as negatives. A traditional
-  multivariate model as well as a Bayesian modeling average (BMA) were used to find
-  parsimonious classifiers of hemozoin inhibition.
+  multivariate model was used to find a simple classifier of hemozoin inhibition.
+  Originally, the model used ChemSpyder descriptors. Here, we replaced them with calculated (RDKit)
+  versions of them. The Bayesian Model Averaging (BMA) was not implemented due to the need
+  for refractive index estimation, which is not straightforward from SMILES.
 Deployment:
 - Local
-- Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
+Source: Local
+Source Type: Replicated
+Task: Annotation
+Subtask: Activity prediction
 Input:
 - Compound
 Input Dimension: 1
 Output:
-- Value
 - Score
-- Compound
-- Probability
-- Experimental value
-- '...'
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Consistency: Fixed
+Interpretation: Probability of hemozoin inhibition based on a traditional multivariate
+  model
 Tag:
 - Malaria
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+- Malaria
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
-Publication Year: 2025
+- Plasmodium falciparum
+Publication Type: Peer reviewed
+Publication Year: 2017
 Publication: https://journals.asm.org/doi/10.1128/aac.01607-16
-Source Code: null
+Source Code: https://github.com/ersilia-os/eos9n1s
 License: GPL-3.0-only

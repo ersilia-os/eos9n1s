@@ -1,1 +1,2 @@
 name,type,direction,description
+tmm_proba,float,high,Traditional multivariate model probability of hemozoin inhibition
