@@ -2,8 +2,7 @@
 
 This very simple model using simple physicochemical parameters to predict hemozoin inhibition. The model is based on a HTS assay on 9, 600 compounds, from which 224 were hits and another 199 were randomly sampled as negatives. A traditional multivariate model was used to find a simple classifier of hemozoin inhibition. Originally, the model used ChemSpyder descriptors. Here, we replaced them with calculated (RDKit) versions of them. The Bayesian Model Averaging (BMA) was not implemented due to the need for refractive index estimation, which is not straightforward from SMILES.
 
-This model was incorporated on 2026-02-03.
-
+This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
 
 ## Information
 ### Identifiers
@@ -35,12 +34,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Replicated`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9n1s](https://hub.docker.com/r/ersiliaos/eos9n1s)
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9n1s.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9n1s.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `500`
+- **Image Size (Mb):** `450.49`
 
+**Computational Performance (seconds):**
+- 10 inputs: `27.78`
+- 100 inputs: `17.49`
+- 10000 inputs: `31.41`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/eos9n1s](https://github.com/ersilia-os/eos9n1s)
