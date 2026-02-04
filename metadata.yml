@@ -37,3 +37,6 @@ Publication: https://journals.asm.org/doi/10.1128/aac.01607-16
 Source Code: https://github.com/ersilia-os/eos9n1s
 License: GPL-3.0-only
 Incorporation Date: '2026-02-03'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9n1s.zip
+Model Size: 1.0
+Environment Size: 500.0
