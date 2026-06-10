@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/eos9n1s](https://github.com/ersilia-os/eos9n1s)
-- **Publication**: [https://journals.asm.org/doi/10.1128/aac.01607-16](https://journals.asm.org/doi/10.1128/aac.01607-16)
+- **Publication**: [https://doi.org/10.1128/aac.01607-16](https://doi.org/10.1128/aac.01607-16)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2017`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
