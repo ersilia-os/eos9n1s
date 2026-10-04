@@ -1,6 +1,6 @@
 # Hemozoin inhibitor prediction using simple physicochemical parameters
 
-This very simple model using simple physicochemical parameters to predict hemozoin inhibition. The model is based on a HTS assay on 9, 600 compounds, from which 224 were hits and another 199 were randomly sampled as negatives. A traditional multivariate model was used to find a simple classifier of hemozoin inhibition. Originally, the model used ChemSpyder descriptors. Here, we replaced them with calculated (RDKit) versions of them. The Bayesian Model Averaging (BMA) was not implemented due to the need for refractive index estimation, which is not straightforward from SMILES.
+Flags inhibitors of hemozoin formation, the crystallisation process by which Plasmodium detoxifies haem released during haemoglobin digestion and the mechanism through which chloroquine acts. Huy and colleagues screened compounds for this activity and found that simple physicochemical properties predicted it well enough to build a usable model, without requiring structural information. Ersilia distributes a replicated version following the published approach.
 
 This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of hemozoin inhibition based on a traditional multivariate model
+- **Interpretation:** Probability that a compound inhibits hemozoin formation in Plasmodium.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
