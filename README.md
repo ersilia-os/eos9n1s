@@ -1,6 +1,6 @@
 # Hemozoin inhibitor prediction using simple physicochemical parameters
 
-Flags inhibitors of hemozoin formation, the crystallisation process by which Plasmodium detoxifies haem released during haemoglobin digestion and the mechanism through which chloroquine acts. Huy and colleagues screened compounds for this activity and found that simple physicochemical properties predicted it well enough to build a usable model, without requiring structural information. Ersilia distributes a replicated version following the published approach.
+Flags inhibitors of hemozoin formation, by which Plasmodium crystallises the haem released during haemoglobin digestion and the mechanism targeted by quinine and chloroquine. Huy and colleagues screened 9,600 compounds in a cell-free assay, confirmed 224 hits by dose-response against 199 random negatives, and fitted a multivariate logistic regression on three physicochemical properties, for AUC 0.736. Ersilia replicates that equation with RDKit logP, hydrogen bond donors and hydrogen count replacing the original ChemSpider values; the Bayesian variant is omitted as it needs refractive index.
 
 This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that a compound inhibits hemozoin formation in Plasmodium.
+- **Interpretation:** Probability of inhibiting hemozoin crystallisation, with 0.536 the cut-off reported as optimal in the original study.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
