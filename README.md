@@ -2,7 +2,8 @@
 
 Flags inhibitors of hemozoin formation, by which Plasmodium crystallises the haem released during haemoglobin digestion and the mechanism targeted by quinine and chloroquine. Huy and colleagues screened 9,600 compounds in a cell-free assay, confirmed 224 hits by dose-response against 199 random negatives, and fitted a multivariate logistic regression on three physicochemical properties, for AUC 0.736. Ersilia replicates that equation with RDKit logP, hydrogen bond donors and hydrogen count replacing the original ChemSpider values; the Bayesian variant is omitted as it needs refractive index.
 
-This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
+This model was incorporated on 2026-02-03.
+Last packaged on 2026-02-04.
 
 ## Information
 ### Identifiers
@@ -14,7 +15,7 @@ This model was incorporated on 2026-02-03.Last packaged on 2026-02-04.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Malaria`
 - **Target Organism:** `Plasmodium falciparum`
-- **Tags:** `Malaria`
+- **Tags:** `Antiparasitic activity`
 
 ### Input
 - **Input:** `Compound`
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9n1s](https://hub.docker.com/r/ersiliaos/eos9n1s)
 - **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9n1s.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9n1s.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9n1s_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9n1s_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
